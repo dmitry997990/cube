@@ -1,8 +1,11 @@
+html {
+    height: 100% !important;   
+}
 body {
     margin: 0;
     padding: 0; 
     width: 100%;
-    height: 100%;
+    height: 100% !important;
 }
 /* Начало стилей хедера */
 header {
@@ -10,20 +13,61 @@ header {
     width: 100%;
     background: #34495E; 
 }
+.logo {
+    height: 50px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 9%;
+}
+.git {
+    width: 48px;
+    height: 48px;
+    margin-right: 2%;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin-top: 11px;    
+}
+.git a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;    
+    background: url(img/git.png) no-repeat;   
+}
 /* Конец стилей хедера */
-
 /* Стили главной части */
 main {
     width: 100%;
-    position: absolute;
-    top: 70px;
-    bottom: 70px;    
+    height: 80%;     
 }
 .left-column {
-    height: 10px;
+    height: 100%;
+    background: #768384;    
 }
 .right-column {
-    height: 10px;   
+    height: 100%;   
+    background: url(img/main-bg.jpg) no-repeat;
+}
+/* Работа с work-area */
+.work-area {
+    display: block;
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    margin-top: 10%;
+    background: black;
+}
+/* +-----------------+*/
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+}
+.caption {
+    text-align: center;      
 }
 /* Конец стилей главной части */
 
@@ -35,5 +79,14 @@ footer {
     bottom: 0;
     left: 0;
     background: #22313F;
+}
+footer span {
+    display: inline-block;
+    float: right;
+    margin-right: 2%;
+    color: #8B9694;
+    font-size: 50px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 /* Конец стилей футера */
